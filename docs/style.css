@@ -190,24 +190,23 @@ h1#site-name {
   max-width: 990px;
   width: 97%;
   margin: 0 auto;
-  padding: 15px 1.75% 10px 1.75%;
-  display: flex;
-  gap: 24px;
-  align-items: flex-start;
+  padding: 15px 0 10px 0;
+  background: #fff;
 }
 
 #content {
-  width: 66%;
-  flex: 1;
-  min-width: 0;
-  padding: 15px 1.5% 15px 1.5%;
-  overflow: hidden;
+  width: 28%;
+  margin: 0 1.5% 0 1.5%;
+  float: right;
+  overflow-x: hidden;
 }
 
 #sidebar {
   width: 28%;
-  margin: 0 1.5%;
-  flex-shrink: 0;
+  margin: 0 1.5% 0 1.4%;
+  float: right;
+  overflow-x: hidden;
+  display: none;
 }
 
 #page-content {
@@ -216,27 +215,37 @@ h1#site-name {
 
 /* ── HERO IMAGE (homepage only) ── */
 #front-pic {
-  max-width: 990px;
-  width: 97%;
-  margin: 0 auto;
-  float: none;
-  clear: both;
+  width: 66.161%;
+  float: left;
+  clear: left;
 }
 
 #front-image {
-  width: 85%;
+  width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
 }
 
-#page-content {
+#front-bottom {
   width: 100%;
   clear: both;
   padding-top: 15px;
   overflow-y: auto;
 }
-#content h1 {
+
+.content-third {
+  width: 32.323%;
+  margin-left: 1.515%;
+  float: left;
+  overflow-x: hidden;
+}
+
+.content-third:first-child {
+  margin-left: 0%;
+}
+
+#content h1,
+#front-bottom h1 {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 190%;
   font-weight: bold;
@@ -245,7 +254,8 @@ h1#site-name {
   line-height: 130%;
 }
 
-#content h2 {
+#content h2,
+#front-bottom h2 {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 170%;
   font-weight: bold;
@@ -254,16 +264,19 @@ h1#site-name {
   line-height: 130%;
 }
 
-#content h2 a {
+#content h2 a,
+#front-bottom h2 a {
   color: #005A9C;
   text-decoration: none;
 }
 
-#content h2 a:hover {
+#content h2 a:hover,
+#front-bottom h2 a:hover {
   text-decoration: underline;
 }
 
-#content h3 {
+#content h3,
+#front-bottom h3 {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 150%;
   font-weight: bold;
@@ -272,7 +285,10 @@ h1#site-name {
   line-height: 130%;
 }
 
-#content p { margin-bottom: 12px; }
+#content p,
+#front-bottom p { 
+  margin-bottom: 12px; 
+}
 
 #content ul, #content ol {
   margin: 8px 0 12px 24px;
