@@ -38,7 +38,7 @@ img { max-width: 100%; height: auto; }
 /* ── HEADER / NAV ── */
 #header {
   background: #fff;
-  border-bottom: 3px solid #3b6e23;
+  border-bottom: 3px solid #005A9C;
   padding: 10px 0 0;
 }
 
@@ -75,7 +75,7 @@ img { max-width: 100%; height: auto; }
 
 /* ── MAIN NAVIGATION ── */
 #main-navigation {
-  background: #3b6e23;
+  background: #005A9C;
   margin: 0 -20px;
 }
 
@@ -102,7 +102,7 @@ img { max-width: 100%; height: auto; }
 
 #main-navigation ul li a:hover,
 #main-navigation ul li.current a {
-  background: #2a5018;
+  background: #003D6B;
   color: #fff;
 }
 
