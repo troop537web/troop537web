@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(for f in calendar.html parents.html contact.html resources.html)",
+      "Bash(do)",
+      "Bash(sed -i -e 's|https://www.troop537.com/wp-content/uploads/2020/06/IMG_0883-300x234.jpg|images/IMG_0883-300x234.jpg|g' -e 's|https://www.troop537.com/wp-content/themes/scouttroop-nIXQ0c/images/prepared_standard_rev.gif|images/prepared_standard_rev.gif|g' -e 's|https://troop537.com/wp-content/uploads/2020/06/denver-area-coucil.jpg|images/denver-area-coucil.jpg|g' \"$f\")",
+      "Bash(echo \"Updated $f\")",
+      "Bash(done)",
+      "Bash(for f in about.html crew.html recent-events.html calendar.html photos.html parents.html resources.html contact.html)",
+      "Bash(perl -i -0pe 's|  <div class=\"\"widget\"\">\\\\n    <form class=\"\"search-form\"\".*?</form>\\\\n  </div>\\\\n||s' \"$f\")",
+      "Bash(perl -i -0pe 's|  <div class=\"\"widget\"\">\\\\n    <img class=\"\"prepared-img\"\".*?>\\\\n  </div>\\\\n||s' \"$f\")"
+    ]
+  }
+}
