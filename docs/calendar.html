@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar — BSA Troop 537</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .event-row td:first-child { font-weight: 600; white-space: nowrap; }
+    .month-header {
+      background: var(--scout-green-mid);
+      color: white;
+      padding: 10px 18px;
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    .event-type {
+      display: inline-block;
+      font-size: .75rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 50px;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+    .type-meeting { background: #e8f4e8; color: #2D5016; }
+    .type-camp    { background: #fff3cd; color: #7a5a00; }
+    .type-service { background: #fde8e8; color: #8B1A1A; }
+    .type-other   { background: #e8e8f8; color: #333; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a class="nav-brand" href="index.html"><span class="fleur">⚜</span><span>BSA Troop 537</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="calendar.html">Calendar</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <h1>Troop Calendar</h1>
+    <p>Meetings, campouts, service projects, and special events.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <!-- LEGEND -->
+    <div style="display:flex; gap:12px; flex-wrap:wrap; margin-bottom:32px; align-items:center;">
+      <strong style="margin-right:4px;">Legend:</strong>
+      <span class="event-type type-meeting">📋 Meeting</span>
+      <span class="event-type type-camp">🏕️ Campout</span>
+      <span class="event-type type-service">🤝 Service</span>
+      <span class="event-type type-other">⭐ Special</span>
+    </div>
+
+    <!-- NOTE -->
+    <div class="card" style="border-top-color:var(--scout-green); margin-bottom:32px; padding:20px 24px;">
+      <p class="mb-0">📌 <strong>Weekly troop meetings</strong> are held every <strong>Tuesday, 7:00–8:30 PM</strong> at [Meeting Location]. These are not listed individually below.</p>
+    </div>
+
+    <!-- CALENDAR TABLE -->
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Event</th>
+          <th>Location</th>
+          <th>Type</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- JANUARY -->
+        <tr><td colspan="5" class="month-header">January 2025</td></tr>
+        <tr class="event-row"><td>Jan 4</td><td>First Meeting of the Year</td><td>Meeting Hall</td><td><span class="event-type type-meeting">Meeting</span></td><td>Program planning session</td></tr>
+        <tr class="event-row"><td>Jan 17–19</td><td>Winter Campout</td><td>[State Park / Location]</td><td><span class="event-type type-camp">Campout</span></td><td>Cold weather camping skills</td></tr>
+
+        <!-- FEBRUARY -->
+        <tr><td colspan="5" class="month-header">February 2025</td></tr>
+        <tr class="event-row"><td>Feb 8</td><td>Merit Badge Clinic</td><td>Meeting Hall</td><td><span class="event-type type-other">Special</span></td><td>Multiple badges offered</td></tr>
+        <tr class="event-row"><td>Feb 14–16</td><td>Monthly Campout</td><td>[Location TBD]</td><td><span class="event-type type-camp">Campout</span></td><td></td></tr>
+
+        <!-- MARCH -->
+        <tr><td colspan="5" class="month-header">March 2025</td></tr>
+        <tr class="event-row"><td>Mar 1</td><td>Court of Honor</td><td>Meeting Hall</td><td><span class="event-type type-other">Special</span></td><td>Rank advancements &amp; merit badges</td></tr>
+        <tr class="event-row"><td>Mar 15</td><td>Community Service Project</td><td>[Location TBD]</td><td><span class="event-type type-service">Service</span></td><td>Details forthcoming</td></tr>
+        <tr class="event-row"><td>Mar 21–23</td><td>Spring Campout</td><td>[Location TBD]</td><td><span class="event-type type-camp">Campout</span></td><td></td></tr>
+
+        <!-- APRIL -->
+        <tr><td colspan="5" class="month-header">April 2025</td></tr>
+        <tr class="event-row"><td>Apr 5</td><td>Scouting for Food Drive</td><td>Local Neighborhoods</td><td><span class="event-type type-service">Service</span></td><td>Annual food bank drive</td></tr>
+        <tr class="event-row"><td>Apr 18–20</td><td>Spring Campout</td><td>[Location TBD]</td><td><span class="event-type type-camp">Campout</span></td><td></td></tr>
+
+        <!-- MAY -->
+        <tr><td colspan="5" class="month-header">May 2025</td></tr>
+        <tr class="event-row"><td>May 1</td><td>Court of Honor</td><td>Meeting Hall</td><td><span class="event-type type-other">Special</span></td><td></td></tr>
+        <tr class="event-row"><td>May 16–18</td><td>Campout</td><td>[Location TBD]</td><td><span class="event-type type-camp">Campout</span></td><td></td></tr>
+        <tr class="event-row"><td>May 26</td><td>Memorial Day Service</td><td>[Cemetery / Location]</td><td><span class="event-type type-service">Service</span></td><td>Flag ceremony and honors</td></tr>
+
+        <!-- SUMMER -->
+        <tr><td colspan="5" class="month-header">June – August 2025 (Summer)</td></tr>
+        <tr class="event-row"><td>June TBD</td><td>Summer Camp</td><td>[Scout Camp Name]</td><td><span class="event-type type-camp">Campout</span></td><td>Week-long BSA Summer Camp</td></tr>
+        <tr class="event-row"><td>July TBD</td><td>High Adventure Trip</td><td>[Location TBD]</td><td><span class="event-type type-other">Special</span></td><td>Older Scout activity</td></tr>
+
+        <!-- FALL -->
+        <tr><td colspan="5" class="month-header">September 2025</td></tr>
+        <tr class="event-row"><td>Sep TBD</td><td>Fall Campout</td><td>[Location TBD]</td><td><span class="event-type type-camp">Campout</span></td><td></td></tr>
+        <tr class="event-row"><td>Sep TBD</td><td>Recharter Information Night</td><td>Meeting Hall</td><td><span class="event-type type-other">Special</span></td><td></td></tr>
+      </tbody>
+    </table>
+
+    <div class="card" style="margin-top:32px; border-top-color:var(--scout-tan);">
+      <p class="mb-0">📬 <strong>Want event updates by email?</strong> <a href="contact.html">Contact us</a> and ask to be added to our mailing list.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col"><span class="footer-fleur">⚜</span><h4>BSA Troop 537</h4><p>Committed to developing character, citizenship, and leadership in young men.</p></div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="calendar.html">Calendar</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="resources.html">Resources</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Meetings</h4><p>Every Tuesday<br>7:00 PM – 8:30 PM<br>[Charter Org. / Location]<br>[City, State ZIP]</p></div>
+      <div class="footer-col"><h4>Contact</h4><p>Scoutmaster: [Name]<br>[email@example.com]<br>[Phone Number]</p></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2025 BSA Troop 537. All rights reserved. &nbsp;|&nbsp; Chartered by [Charter Organization]</p></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

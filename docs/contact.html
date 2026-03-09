@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — BSA Troop 537</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a class="nav-brand" href="index.html"><span class="fleur">⚜</span><span>BSA Troop 537</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="calendar.html">Calendar</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <h1>Contact Troop 537</h1>
+    <p>Questions about joining, events, or volunteering? We'd love to hear from you.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:start;">
+
+      <!-- FORM -->
+      <div>
+        <span class="tag">Send a Message</span>
+        <h2 style="margin-top:12px;">Get In Touch</h2>
+        <div class="divider"></div>
+
+        <!--
+          HOW TO MAKE THIS FORM WORK:
+          Option 1 — Formspree (free, easiest):
+            1. Go to https://formspree.io and create a free account
+            2. Create a new form and copy your form ID
+            3. Change the action below to: action="https://formspree.io/f/YOUR_FORM_ID"
+            4. Remove the onsubmit attribute and the handleSubmit script
+          Option 2 — Netlify Forms (free if hosting on Netlify):
+            1. Add  netlify  attribute to the <form> tag
+            2. Netlify automatically handles submissions
+          Option 3 — mailto: (no backend needed, opens email client):
+            Change action to: action="mailto:yourtroop@email.com" method="post" enctype="text/plain"
+        -->
+        <form id="contact-form" action="#" method="post" onsubmit="handleSubmit(event)">
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+            <div class="form-group">
+              <label for="first-name">First Name *</label>
+              <input type="text" id="first-name" name="first-name" required placeholder="Jane">
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name *</label>
+              <input type="text" id="last-name" name="last-name" required placeholder="Smith">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required placeholder="jane@example.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject" required>
+              <option value="">— Select a topic —</option>
+              <option>Interested in Joining as a Scout</option>
+              <option>Interested in Volunteering</option>
+              <option>Question About an Event</option>
+              <option>Question About Dues / Finances</option>
+              <option>General Question</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required placeholder="Tell us a little about yourself or your question..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%; font-size:1rem; padding:14px;">
+            Send Message →
+          </button>
+        </form>
+
+        <div id="form-success" style="display:none;" class="card" style="border-top-color:var(--scout-green); margin-top:20px; padding:20px;">
+          <p class="mb-0">✅ <strong>Message sent!</strong> We'll get back to you within a day or two.</p>
+        </div>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div>
+        <span class="tag">Find Us</span>
+        <h2 style="margin-top:12px;">Troop Information</h2>
+        <div class="divider"></div>
+
+        <div class="card" style="margin-bottom:20px;">
+          <h3>📅 Weekly Meetings</h3>
+          <p style="margin-top:8px;">
+            <strong>Day:</strong> Every Tuesday<br>
+            <strong>Time:</strong> 7:00 PM – 8:30 PM<br>
+            <strong>Location:</strong> [Charter Organization Name]<br>
+            [Street Address]<br>
+            [City, State ZIP]
+          </p>
+          <p class="mb-0" style="font-size:.9rem; color:var(--scout-green);">Visitors and prospective Scouts are always welcome!</p>
+        </div>
+
+        <div class="card" style="margin-bottom:20px;">
+          <h3>👤 Key Contacts</h3>
+          <p style="margin-top:8px;">
+            <strong>Scoutmaster</strong><br>
+            [Name] — <a href="mailto:scoutmaster@example.com">[email@example.com]</a><br>
+            [Phone]
+          </p>
+          <p style="margin-bottom:0;">
+            <strong>Committee Chair</strong><br>
+            [Name] — <a href="mailto:chair@example.com">[email@example.com]</a>
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🆕 Interested in Joining?</h3>
+          <p style="margin-top:8px;">We welcome Scouts aged 11–17 (or who have completed 5th grade). The best way to start is to visit a Tuesday meeting!</p>
+          <ul style="padding-left:20px; font-size:.9rem; line-height:2; color:var(--mid);">
+            <li>No prior Scouting experience required</li>
+            <li>Bring a parent or guardian</li>
+            <li>Wear whatever you have — no uniform needed at first</li>
+            <li>We'll answer all your questions</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col"><span class="footer-fleur">⚜</span><h4>BSA Troop 537</h4><p>Committed to developing character, citizenship, and leadership in young men.</p></div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="calendar.html">Calendar</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="resources.html">Resources</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Meetings</h4><p>Every Tuesday<br>7:00 PM – 8:30 PM<br>[Charter Org. / Location]<br>[City, State ZIP]</p></div>
+      <div class="footer-col"><h4>Contact</h4><p>Scoutmaster: [Name]<br>[email@example.com]<br>[Phone Number]</p></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2025 BSA Troop 537. All rights reserved. &nbsp;|&nbsp; Chartered by [Charter Organization]</p></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    // Demo only — shows success message.
+    // In production, connect to Formspree, Netlify Forms, or a mailto: action (see comment in form).
+    document.getElementById('contact-form').style.display = 'none';
+    document.getElementById('form-success').style.display = 'block';
+  }
+</script>
+</body>
+</html>
