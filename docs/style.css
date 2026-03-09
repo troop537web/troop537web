@@ -47,47 +47,79 @@ img { max-width: 100%; height: auto; }
 }
 
 /* ── HEADER / NAV ── */
-#header {
-  background: #fff;
-  border-bottom: 3px solid #005A9C;
-  padding: 10px 0 0;
-}
-
-#header-inner {
+header#page-header {
   max-width: 990px;
   width: 97%;
+  height: auto;
+  min-height: 100px;
+  padding: 8px 1.5% 8px 1.5%;
   margin: 0 auto;
-  padding: 0 20px;
+  background: #fff;
+  border-bottom: 3px solid #005A9C;
+  overflow: auto;
 }
 
-#logo-area {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 8px;
+#mobile-logo {
+  float: left;
+  display: none;
 }
 
-#logo-images {
-  display: flex;
-  align-items: center;
-  gap: 6px;
+#fleurdelis {
+  float: left;
+  width: 11.8181818%;
+  text-align: center;
 }
 
-#logo-images img {
-  height: 80px;
+#fleurdelis img {
+  max-height: 100px;
   width: auto;
 }
 
-#site-title {
+#brand {
+  float: left;
+  width: 47.27272727%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+h1#site-name {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 28px;
-  font-weight: bold;
+  line-height: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
   color: #CE1126;
+  font-weight: bold;
+}
+
+#site-name a, #site-name a:visited {
+  text-decoration: none;
+  color: #CE1126;
+}
+
+#site-name a:hover {
+  color: #CE1126;
+}
+
+#charter-box {
+  float: right;
+  width: 33%;
+  text-align: right;
+  color: #005A9C;
+  padding-right: 15px;
+  font-size: 90%;
+  line-height: 140%;
+}
+
+#charter-box a {
+  color: #005A9C;
   text-decoration: none;
 }
 
-#site-title:hover {
+#charter-box a:hover {
   color: #CE1126;
+  text-decoration: underline;
 }
 
 /* ── MAIN NAVIGATION ── */
@@ -96,16 +128,19 @@ img { max-width: 100%; height: auto; }
   width: 100%;
   height: 40px;
   margin: 0;
+  clear: both;
 }
 
 #main-navigation ul {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   max-width: 990px;
   width: 97%;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 1.75%;
+  height: 100%;
+  align-items: stretch;
 }
 
 #main-navigation ul li {
@@ -122,12 +157,13 @@ img { max-width: 100%; height: auto; }
   font-family: Helvetica, Arial, sans-serif;
   font-size: 90%;
   font-weight: bold;
-  padding: 0.75em 0.75em;
+  padding: 0 1em;
   border-left: 1px solid #0065AD;
   transition: background 0.15s;
-  line-height: 100%;
+  line-height: 40px;
   white-space: nowrap;
   overflow: visible;
+  height: 40px;
 }
 
 #main-navigation ul li:first-child a {
@@ -163,6 +199,10 @@ img { max-width: 100%; height: auto; }
   width: 28%;
   margin: 0 1.5%;
   flex-shrink: 0;
+}
+
+#page-content {
+  width: 100%;
 }
 
 /* ── HERO IMAGE (homepage only) ── */
