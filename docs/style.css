@@ -224,9 +224,10 @@ h1#site-name {
 }
 
 #front-image {
-  width: 100%;
+  width: 85%;
   height: auto;
   display: block;
+  margin: 0 auto;
 }
 
 #page-content {
