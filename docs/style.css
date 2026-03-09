@@ -1,0 +1,381 @@
+/* ======================================================
+   Troop & Crew 537 — Static replica of troop537.com
+   Matches the original WordPress scouttroop theme:
+   - Dark olive/green top bar
+   - White nav bar with logo + horizontal links
+   - Wide content left, narrow sidebar right
+   - Georgia serif body text
+   - Green H1/H2 headings
+   - Dark footer with two copyright lines
+   ====================================================== */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #333;
+  background: #fff;
+}
+
+a { color: #2a6e2a; text-decoration: underline; }
+a:hover { color: #1a4e1a; }
+
+img { max-width: 100%; height: auto; }
+
+/* ── TOP LOCATION BAR ── */
+#location-bar {
+  background: #3b4a2e;
+  color: #c8d4a8;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  padding: 4px 0;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* ── HEADER / NAV ── */
+#header {
+  background: #fff;
+  border-bottom: 3px solid #3b6e23;
+  padding: 10px 0 0;
+}
+
+#header-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#logo-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+
+#logo-images {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#logo-images img { height: 60px; width: auto; }
+
+#site-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #3b6e23;
+  text-decoration: none;
+}
+
+#site-title:hover { color: #2a5018; }
+
+/* ── MAIN NAVIGATION ── */
+#main-navigation {
+  background: #3b6e23;
+  margin: 0 -20px;
+}
+
+#main-navigation ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#main-navigation ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 9px 14px;
+  border-right: 1px solid rgba(255,255,255,0.2);
+  transition: background 0.15s;
+}
+
+#main-navigation ul li a:hover,
+#main-navigation ul li.current a {
+  background: #2a5018;
+  color: #fff;
+}
+
+#main-navigation ul li:last-child a { border-right: none; }
+
+/* ── PAGE LAYOUT ── */
+#wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+#content {
+  flex: 1;
+  min-width: 0;
+}
+
+#sidebar {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+/* ── HERO IMAGE (homepage only) ── */
+#hero-image {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+#hero-image img.front-pic {
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+#hero-image img.prepared {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  height: 80px;
+  width: auto;
+}
+
+/* ── CONTENT HEADINGS ── */
+#content h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  color: #3b6e23;
+  margin: 18px 0 10px;
+  line-height: 1.25;
+}
+
+#content h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #3b6e23;
+  margin: 20px 0 8px;
+}
+
+#content h2 a {
+  color: #3b6e23;
+  text-decoration: none;
+}
+#content h2 a:hover { text-decoration: underline; }
+
+#content h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #3b6e23;
+  margin: 16px 0 6px;
+}
+
+#content p { margin-bottom: 12px; }
+
+#content ul, #content ol {
+  margin: 8px 0 12px 24px;
+}
+
+#content li { margin-bottom: 4px; }
+
+/* ── POST META ── */
+.post-meta {
+  font-size: 12px;
+  color: #777;
+  font-family: Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+/* ── PHOTOS PAGE ── */
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.photo-gallery img {
+  width: calc(33.333% - 6px);
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── CONTACT FORM ── */
+.contact-form {
+  max-width: 500px;
+}
+
+.contact-form .field-row {
+  margin-bottom: 14px;
+}
+
+.contact-form label {
+  display: block;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #444;
+}
+
+.contact-form input[type=text],
+.contact-form input[type=email],
+.contact-form textarea {
+  width: 100%;
+  padding: 7px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  background: #fafafa;
+}
+
+.contact-form input[type=text]:focus,
+.contact-form input[type=email]:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #3b6e23;
+  background: #fff;
+}
+
+.contact-form textarea { min-height: 100px; resize: vertical; }
+
+.contact-form .name-row {
+  display: flex;
+  gap: 10px;
+}
+.contact-form .name-row > div { flex: 1; }
+
+.submit-btn {
+  background: #3b6e23;
+  color: #fff;
+  border: none;
+  padding: 9px 22px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.submit-btn:hover { background: #2a5018; }
+
+/* ── SIDEBAR ── */
+#sidebar .widget {
+  margin-bottom: 20px;
+}
+
+#sidebar img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#sidebar .search-form input[type=search] {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+}
+
+#sidebar .prepared-img {
+  width: 100%;
+}
+
+/* ── FOOTER ── */
+#footer {
+  background: #3b4a2e;
+  color: #c8d4a8;
+  padding: 14px 20px;
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+#footer-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#footer a { color: #c8d4a8; }
+#footer a:hover { color: #fff; }
+#footer p { margin-bottom: 4px; }
+
+/* ── VENTURE CREW LOGO ── */
+.crew-logo {
+  max-width: 220px;
+  margin: 10px 0 16px;
+}
+
+/* ── CALENDAR IFRAME WRAPPER ── */
+.calendar-embed {
+  margin: 16px 0;
+}
+
+/* ── RESOURCE IMAGES ── */
+.resource-img {
+  float: right;
+  margin: 0 0 10px 16px;
+  max-width: 180px;
+}
+
+/* ── ABOUT PAGE PHOTOS ── */
+.supporting-photos {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+
+.supporting-photos img {
+  width: calc(33.333% - 6px);
+  height: auto;
+}
+
+.scoutmaster-photo {
+  float: right;
+  margin: 0 0 12px 16px;
+  max-width: 260px;
+}
+
+.former-sm-photo {
+  float: left;
+  margin: 0 16px 12px 0;
+  max-width: 140px;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 640px) {
+  #wrapper { flex-direction: column; padding: 12px; }
+  #sidebar { width: 100%; }
+  #logo-area { flex-direction: column; align-items: flex-start; gap: 8px; }
+  #main-navigation ul { flex-wrap: wrap; }
+  #main-navigation ul li a { padding: 8px 10px; font-size: 12px; }
+  .photo-gallery img { width: calc(50% - 4px); }
+  .supporting-photos img { width: calc(50% - 4px); }
+  .scoutmaster-photo, .former-sm-photo { float: none; max-width: 100%; margin: 0 0 12px; }
+  #hero-image img.prepared { display: none; }
+}

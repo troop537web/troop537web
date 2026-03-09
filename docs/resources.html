@@ -3,241 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resources — BSA Troop 537</title>
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    .resource-list { list-style: none; }
-    .resource-list li {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      padding: 14px 0;
-      border-bottom: 1px solid #eee;
-    }
-    .resource-list li:last-child { border-bottom: none; }
-    .resource-icon {
-      font-size: 1.6rem;
-      width: 44px;
-      text-align: center;
-      flex-shrink: 0;
-    }
-    .resource-info { flex: 1; }
-    .resource-info strong { display: block; color: var(--dark); }
-    .resource-info span { font-size: .88rem; color: #777; }
-    .resource-list a.resource-link {
-      font-size: .85rem;
-      font-weight: 600;
-      background: var(--scout-tan-light);
-      color: var(--scout-green);
-      padding: 6px 14px;
-      border-radius: 50px;
-      white-space: nowrap;
-      transition: background .15s;
-    }
-    .resource-list a.resource-link:hover { background: var(--scout-tan); }
-  </style>
+  <title>Resources | Troop and Crew 537 | Lakewood, CO</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-  <div class="container nav-inner">
-    <a class="nav-brand" href="index.html"><span class="fleur">⚜</span><span>BSA Troop 537</span></a>
-    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="leadership.html">Leadership</a></li>
-      <li><a href="calendar.html">Calendar</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="resources.html">Resources</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-
-<div class="page-hero">
-  <div class="container">
-    <h1>Resources &amp; Forms</h1>
-    <p>Forms, handbooks, links, and information for Scouts and parents.</p>
+<div id="location-bar">Lakewood, CO</div>
+<div id="header">
+  <div id="header-inner">
+    <div id="logo-area">
+      <div id="logo-images">
+        <img src="https://www.troop537.com/wp-content/themes/scouttroop-nIXQ0c/images/Universal_Emblem_tiny.gif" alt="B.S.A. Fleur De Lis">
+        <img src="https://www.troop537.com/wp-content/themes/scouttroop-nIXQ0c/images/Universal_Emblem_bar.png" alt="B.S.A. Fleur De Lis">
+        <img src="https://www.troop537.com/wp-content/themes/scouttroop-nIXQ0c/images/bsa_brand.png" alt="Boy Scouts of America">
+      </div>
+      <a id="site-title" href="index.html">Troop and Crew 537</a>
+    </div>
+    <nav id="main-navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Troop 537</a></li>
+        <li><a href="crew.html">Crew 537</a></li>
+        <li><a href="recent-events.html">Recent Events</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="parents.html">Parents</a></li>
+        <li class="current"><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </div>
 </div>
 
-<section class="section">
-  <div class="container">
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:40px;">
 
-      <!-- FORMS -->
-      <div>
-        <span class="tag">Paperwork</span>
-        <h2 style="margin-top:12px;">Forms &amp; Documents</h2>
-        <div class="divider"></div>
-        <p style="font-size:.9rem;">Update the links below to point to your actual files. Place PDFs in the <code>resources/</code> folder or link to Google Drive / Dropbox.</p>
+<div id="wrapper">
+  <div id="content">
 
-        <div class="card" style="padding:8px 24px;">
-          <ul class="resource-list">
-            <li>
-              <span class="resource-icon">📋</span>
-              <div class="resource-info">
-                <strong>BSA Annual Health &amp; Medical Record</strong>
-                <span>Required for all camping activities. Parts A, B &amp; C.</span>
-              </div>
-              <a href="resources/annual-health-form.pdf" class="resource-link">Download</a>
-            </li>
-            <li>
-              <span class="resource-icon">✅</span>
-              <div class="resource-info">
-                <strong>Permission Slip (Generic)</strong>
-                <span>Standard activity permission form for day trips.</span>
-              </div>
-              <a href="resources/permission-slip.pdf" class="resource-link">Download</a>
-            </li>
-            <li>
-              <span class="resource-icon">🏕️</span>
-              <div class="resource-info">
-                <strong>Campout Permission Slip</strong>
-                <span>Required for all overnight camping trips.</span>
-              </div>
-              <a href="resources/campout-permission.pdf" class="resource-link">Download</a>
-            </li>
-            <li>
-              <span class="resource-icon">💰</span>
-              <div class="resource-info">
-                <strong>Troop Dues Information</strong>
-                <span>Annual recharter and monthly dues schedule.</span>
-              </div>
-              <a href="resources/dues-info.pdf" class="resource-link">Download</a>
-            </li>
-            <li>
-              <span class="resource-icon">🆕</span>
-              <div class="resource-info">
-                <strong>New Scout Application</strong>
-                <span>Official BSA application for new Scouts joining the troop.</span>
-              </div>
-              <a href="https://www.scouting.org/programs/scouts-bsa/join/" class="resource-link" target="_blank">BSA Website ↗</a>
-            </li>
-            <li>
-              <span class="resource-icon">👤</span>
-              <div class="resource-info">
-                <strong>Adult Volunteer Application</strong>
-                <span>For parents and adults interested in volunteering.</span>
-              </div>
-              <a href="https://www.scouting.org/programs/scouts-bsa/adult-leaders/" class="resource-link" target="_blank">BSA Website ↗</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- LINKS & RESOURCES -->
-      <div>
-        <span class="tag">Helpful Links</span>
-        <h2 style="margin-top:12px;">Online Resources</h2>
-        <div class="divider"></div>
-
-        <div class="card" style="padding:8px 24px; margin-bottom:24px;">
-          <ul class="resource-list">
-            <li>
-              <span class="resource-icon">🌐</span>
-              <div class="resource-info">
-                <strong>Scoutbook</strong>
-                <span>Track advancement, merit badges, and troop communications.</span>
-              </div>
-              <a href="https://scoutbook.scouting.org" class="resource-link" target="_blank">Visit ↗</a>
-            </li>
-            <li>
-              <span class="resource-icon">🏛️</span>
-              <div class="resource-info">
-                <strong>BSA Council Website</strong>
-                <span>Local council events, camps, and resources.</span>
-              </div>
-              <a href="https://www.scouting.org" class="resource-link" target="_blank">Visit ↗</a>
-            </li>
-            <li>
-              <span class="resource-icon">🎖️</span>
-              <div class="resource-info">
-                <strong>Merit Badge Requirements</strong>
-                <span>Official requirements for all 130+ merit badges.</span>
-              </div>
-              <a href="https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/merit-badges/" class="resource-link" target="_blank">Visit ↗</a>
-            </li>
-            <li>
-              <span class="resource-icon">🛡️</span>
-              <div class="resource-info">
-                <strong>Youth Protection Training</strong>
-                <span>Required for all adult leaders. Renewed every 2 years.</span>
-              </div>
-              <a href="https://www.scouting.org/training/youth-protection/" class="resource-link" target="_blank">Visit ↗</a>
-            </li>
-            <li>
-              <span class="resource-icon">📦</span>
-              <div class="resource-info">
-                <strong>BSA Supply / ScoutShop</strong>
-                <span>Uniforms, handbooks, badges, and gear.</span>
-              </div>
-              <a href="https://www.scoutshop.org" class="resource-link" target="_blank">Visit ↗</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- PACKING LIST -->
-        <div class="card">
-          <h3>🎒 Basic Camping Packing List</h3>
-          <ul style="margin-top:12px; padding-left:20px; line-height:2; font-size:.9rem; color:var(--mid);">
-            <li>Sleeping bag &amp; sleeping pad</li>
-            <li>Tent (assigned by patrol)</li>
-            <li>Rain gear / extra layers</li>
-            <li>Water bottle (32 oz minimum)</li>
-            <li>Personal first aid kit</li>
-            <li>Flashlight / headlamp + extra batteries</li>
-            <li>Scout handbook</li>
-            <li>Mess kit &amp; utensils</li>
-            <li>Sunscreen &amp; insect repellent</li>
-            <li>Completed Annual Health Form</li>
-          </ul>
-        </div>
-      </div>
-
+    <h1>Resources</h1>
+    <div class="clearfix">
+      <img class="resource-img" src="https://troop537.com/wp-content/uploads/2020/06/denver-area-coucil.jpg" alt="Denver Area Council">
+      <p>Troop 537 is part of the <strong>Alpine District</strong> (<a href="https://scoutingcolorado.org/districts/alpine/" target="_blank">https://scoutingcolorado.org/districts/alpine/</a>) in the <strong>Greater Colorado Council</strong> (<a href="https://scoutingcolorado.org/" target="_blank">https://scoutingcolorado.org/</a>).</p>
+      <p>Support Troop 537 – If you would like to donate to Troop 537, please <a href="contact.html">contact us directly</a> to take donations. If you would like to support Troop 537 through our <a href="https://www.troop537.com/wp-content/uploads/2024/05/Support-537-at-King-Soopers.pdf" target="_blank">King Soopers program</a>, you can sign up here and part of your grocery spend will be donated to us! This is a fantastic program that has supported our Troop for many years. <a href="https://www.troop537.com/wp-content/uploads/2024/05/Support-537-at-King-Soopers.pdf" target="_blank">Read more here.</a></p>
+      <p><strong>Merit Badges</strong> – There are currently <a href="https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/merit-badges/" target="_blank">135 Merit Badges available</a>. You can see them all here. When working on a Merit Badge, you should print a workbook to keep track of your progress – <a href="http://usscouts.org/mb/worksheets/list.asp" target="_blank">Merit Badge Workbooks</a>. Our troop has Merit Badge counselors to cover each of these.</p>
+      <p><strong>Local Campgrounds</strong> – The <a href="https://www.troop537.com/wp-content/uploads/2021/07/Forest-Service-Campgrounds.pdf" target="_blank">Rocky Mountain Region Campground List</a> and the contact information – <a href="https://www.troop537.com/wp-content/uploads/2021/07/Forest-Service-Campgrounds.pdf" target="_blank">Rocky Mountain Region Directory</a>.</p>
     </div>
-  </div>
-</section>
 
-<!-- FUNDRAISING -->
-<section class="section section--alt">
-  <div class="container">
-    <span class="tag">Fundraising</span>
-    <h2 style="margin-top:12px;">Troop Fundraisers</h2>
-    <div class="divider"></div>
-    <div class="cards cards-3">
-      <div class="card">
-        <div class="card-icon">🍿</div>
-        <h3>Popcorn Sale</h3>
-        <p>Our annual Trail's End Popcorn sale is our primary fundraiser. Scouts earn commissions toward troop activities and equipment.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🪵</div>
-        <h3>Holiday Fundraiser</h3>
-        <p>Additional seasonal fundraising opportunities announced throughout the year. Watch the calendar for details.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🙋</div>
-        <h3>Scout Accounts</h3>
-        <p>Each Scout maintains a Scout Account. Funds raised offset the cost of camping and summer camp. Contact the treasurer for details.</p>
-      </div>
-    </div>
   </div>
-</section>
 
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-col"><span class="footer-fleur">⚜</span><h4>BSA Troop 537</h4><p>Committed to developing character, citizenship, and leadership in young men.</p></div>
-      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="calendar.html">Calendar</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="resources.html">Resources</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-      <div class="footer-col"><h4>Meetings</h4><p>Every Tuesday<br>7:00 PM – 8:30 PM<br>[Charter Org. / Location]<br>[City, State ZIP]</p></div>
-      <div class="footer-col"><h4>Contact</h4><p>Scoutmaster: [Name]<br>[email@example.com]<br>[Phone Number]</p></div>
-    </div>
-    <div class="footer-bottom"><p>&copy; 2025 BSA Troop 537. All rights reserved. &nbsp;|&nbsp; Chartered by [Charter Organization]</p></div>
+<div id="sidebar">
+  <div class="widget">
+    <img src="https://www.troop537.com/wp-content/uploads/2020/06/IMG_0883-300x234.jpg" alt="">
   </div>
-</footer>
+  <div class="widget">
+    <form class="search-form" action="#" method="get">
+      <input type="search" placeholder="Search for:">
+    </form>
+  </div>
+  <div class="widget">
+    <img class="prepared-img" src="https://www.troop537.com/wp-content/themes/scouttroop-nIXQ0c/images/prepared_standard_rev.gif" alt="Do Your Best!">
+  </div>
+</div>
 
-<script src="js/main.js"></script>
+</div>
+
+<div id="footer">
+  <div id="footer-inner">
+    <p>&copy; 2026 Troop and Crew 537 - Denver Area Council, Alpine District - Lakewood, CO - <a href="http://www.scouting.org/">Boy Scouts of America</a> | <a href="privacy.html">Privacy Policy</a></p>
+    <p>&copy; 2026 Troop and Crew 537 - Denver Area Council, Alpine District - Lakewood, CO - <a href="http://www.scouting.org/">Boy Scouts of America</a> - <a href="privacy.html">Privacy Policy</a></p>
+  </div>
+</div>
+
 </body>
 </html>
