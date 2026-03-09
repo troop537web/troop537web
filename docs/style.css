@@ -1,36 +1,47 @@
 /* ======================================================
    Troop & Crew 537 — Static replica of troop537.com
-   Matches the original WordPress scouttroop theme:
-   - Dark olive/green top bar
-   - White nav bar with logo + horizontal links
-   - Wide content left, narrow sidebar right
-   - Georgia serif body text
-   - Green H1/H2 headings
-   - Dark footer with two copyright lines
+   Matches the original WordPress scouttroop theme
+   Colors: #005A9C (blue), #CE1126 (red), #252525 (text)
    ====================================================== */
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-body {
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: 15px;
-  line-height: 1.7;
-  color: #333;
-  background: #fff;
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-a { color: #2a6e2a; text-decoration: underline; }
-a:hover { color: #1a4e1a; }
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 85%;
+  line-height: 160%;
+  color: #252525;
+  background: #fff;
+  width: 100%;
+}
+
+a {
+  color: #005A9C;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #CE1126;
+}
 
 img { max-width: 100%; height: auto; }
 
 /* ── TOP LOCATION BAR ── */
 #location-bar {
-  background: #3b4a2e;
-  color: #c8d4a8;
-  font-size: 12px;
-  font-family: Arial, sans-serif;
-  padding: 4px 0;
+  background: #005A9C;
+  color: #efefef;
+  font-size: 85%;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 8px 20px;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -43,7 +54,8 @@ img { max-width: 100%; height: auto; }
 }
 
 #header-inner {
-  max-width: 960px;
+  max-width: 990px;
+  width: 97%;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -61,70 +73,95 @@ img { max-width: 100%; height: auto; }
   gap: 6px;
 }
 
-#logo-images img { height: 60px; width: auto; }
+#logo-images img {
+  height: 80px;
+  width: auto;
+}
 
 #site-title {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 22px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 28px;
   font-weight: bold;
-  color: #3b6e23;
+  color: #CE1126;
   text-decoration: none;
 }
 
-#site-title:hover { color: #2a5018; }
+#site-title:hover {
+  color: #CE1126;
+}
 
 /* ── MAIN NAVIGATION ── */
 #main-navigation {
   background: #005A9C;
-  margin: 0 -20px;
+  width: 100%;
+  height: 40px;
+  margin: 0;
 }
 
 #main-navigation ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  max-width: 960px;
+  max-width: 990px;
+  width: 97%;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+#main-navigation ul li {
+  position: relative;
+  list-style: none;
+  float: left;
+  display: block;
 }
 
 #main-navigation ul li a {
   display: block;
   color: #fff;
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 90%;
   font-weight: bold;
-  padding: 9px 14px;
-  border-right: 1px solid rgba(255,255,255,0.2);
+  padding: 0.75em 0.75em;
+  border-left: 1px solid #0065AD;
   transition: background 0.15s;
+  line-height: 100%;
+  white-space: nowrap;
+  overflow: visible;
+}
+
+#main-navigation ul li:first-child a {
+  border-left: none;
 }
 
 #main-navigation ul li a:hover,
 #main-navigation ul li.current a {
-  background: #003D6B;
+  background: #CE1126;
   color: #fff;
 }
 
-#main-navigation ul li:last-child a { border-right: none; }
-
 /* ── PAGE LAYOUT ── */
 #wrapper {
-  max-width: 960px;
+  max-width: 990px;
+  width: 97%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 15px 1.75% 10px 1.75%;
   display: flex;
   gap: 24px;
   align-items: flex-start;
 }
 
 #content {
+  width: 66%;
   flex: 1;
   min-width: 0;
+  padding: 15px 1.5% 15px 1.5%;
+  overflow: hidden;
 }
 
 #sidebar {
-  width: 200px;
+  width: 28%;
+  margin: 0 1.5%;
   flex-shrink: 0;
 }
 
@@ -153,34 +190,39 @@ img { max-width: 100%; height: auto; }
 
 /* ── CONTENT HEADINGS ── */
 #content h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 26px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 190%;
   font-weight: bold;
-  color: #3b6e23;
-  margin: 18px 0 10px;
-  line-height: 1.25;
+  color: #005A9C;
+  margin: 0 0 10px 0;
+  line-height: 130%;
 }
 
 #content h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 170%;
   font-weight: bold;
-  color: #3b6e23;
+  color: #005A9C;
   margin: 20px 0 8px;
+  line-height: 130%;
 }
 
 #content h2 a {
-  color: #3b6e23;
+  color: #005A9C;
   text-decoration: none;
 }
-#content h2 a:hover { text-decoration: underline; }
+
+#content h2 a:hover {
+  text-decoration: underline;
+}
 
 #content h3 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 150%;
   font-weight: bold;
-  color: #3b6e23;
-  margin: 16px 0 6px;
+  color: #005A9C;
+  margin: 0 0 10px 0;
+  line-height: 130%;
 }
 
 #content p { margin-bottom: 12px; }
@@ -248,7 +290,7 @@ img { max-width: 100%; height: auto; }
 .contact-form input[type=email]:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: #3b6e23;
+  border-color: #005A9C;
   background: #fff;
 }
 
@@ -261,18 +303,18 @@ img { max-width: 100%; height: auto; }
 .contact-form .name-row > div { flex: 1; }
 
 .submit-btn {
-  background: #3b6e23;
+  background: #005A9C;
   color: #fff;
   border: none;
   padding: 9px 22px;
-  font-family: Arial, sans-serif;
-  font-size: 13px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 90%;
   font-weight: bold;
   border-radius: 3px;
   cursor: pointer;
   transition: background 0.15s;
 }
-.submit-btn:hover { background: #2a5018; }
+.submit-btn:hover { background: #CE1126; }
 
 /* ── SIDEBAR ── */
 #sidebar .widget {
@@ -290,8 +332,13 @@ img { max-width: 100%; height: auto; }
   width: 100%;
   padding: 6px 8px;
   border: 1px solid #ccc;
-  font-size: 13px;
-  font-family: Arial, sans-serif;
+  font-size: 90%;
+  font-family: Helvetica, Arial, sans-serif;
+  background: #005A9C;
+  color: white;
+  border: 1px solid #005A9C;
+  border-radius: 3px;
+  font-weight: bold;
 }
 
 #sidebar .prepared-img {
@@ -300,23 +347,37 @@ img { max-width: 100%; height: auto; }
 
 /* ── FOOTER ── */
 #footer {
-  background: #3b4a2e;
-  color: #c8d4a8;
-  padding: 14px 20px;
+  background: #005A9C;
+  color: #efefef;
+  padding: 10px 20px;
   margin-top: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 80%;
+  width: 100%;
+  clear: both;
+  text-align: center;
 }
 
 #footer-inner {
-  max-width: 960px;
+  max-width: 990px;
   margin: 0 auto;
   text-align: center;
 }
 
-#footer a { color: #c8d4a8; }
-#footer a:hover { color: #fff; }
-#footer p { margin-bottom: 4px; }
+#footer a {
+  color: #efefef;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+  background-color: #005A9C;
+}
+
+#footer p {
+  margin: 0;
+  line-height: 130%;
+}
 
 /* ── VENTURE CREW LOGO ── */
 .crew-logo {
