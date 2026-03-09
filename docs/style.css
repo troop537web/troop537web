@@ -194,10 +194,11 @@ h1#site-name {
   background: #fff;
 }
 
+/* Default 2-column layout for non-homepage pages */
 #content {
-  width: 28%;
+  width: 66%;
   margin: 0 1.5% 0 1.5%;
-  float: right;
+  float: left;
   overflow-x: hidden;
 }
 
@@ -206,6 +207,15 @@ h1#site-name {
   margin: 0 1.5% 0 1.4%;
   float: right;
   overflow-x: hidden;
+}
+
+/* Homepage-specific overrides */
+#front-pic + #content {
+  width: 28%;
+  float: right;
+}
+
+#front-pic ~ #sidebar {
   display: none;
 }
 
