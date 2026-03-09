@@ -194,7 +194,6 @@ h1#site-name {
   display: flex;
   gap: 24px;
   align-items: flex-start;
-  clear: both;
 }
 
 #content {
@@ -217,15 +216,17 @@ h1#site-name {
 
 /* ── HERO IMAGE (homepage only) ── */
 #front-pic {
-  width: 66.161%;
-  float: left;
-  clear: left;
+  max-width: 990px;
+  width: 97%;
+  margin: 0 auto;
+  float: none;
+  clear: both;
 }
 
 #front-image {
-  max-width: 100%;
-  clear: left;
+  width: 100%;
   height: auto;
+  display: block;
 }
 
 #page-content {
