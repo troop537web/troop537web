@@ -129,7 +129,7 @@ h1#site-name {
 }
 
 #main-navigation nav {
-  font-size: 90%;
+  font-size: 100%;
   max-width: 990px;
   width: 97%;
   margin: 0 auto;
@@ -153,21 +153,22 @@ h1#site-name {
   overflow: visible;
   text-align: center;
   white-space: nowrap;
-  max-width: 16.75%;
+  flex: 1;
 }
 
 #main-navigation nav ul li a {
   display: block;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 100%;
+  font-size: 90%;
   font-weight: bold;
-  padding: 0.75em 0 0.77em 0;
+  padding: 0.75em 0.75em;
   border-left: 1px solid #0065AD;
   border-bottom: none;
   overflow: visible;
   transition: background 0.15s;
+  line-height: 100%;
 }
 
 #main-navigation nav ul li:first-child a {
@@ -177,7 +178,7 @@ h1#site-name {
 #main-navigation nav ul li a:hover,
 #main-navigation nav ul li.current a {
   background: #CE1126;
-  color: #fff;
+  color: #ffffff;
 }
 
 #main-navigation nav ul li:last-child a,
