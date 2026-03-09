@@ -50,12 +50,9 @@ img { max-width: 100%; height: auto; }
 header#page-header {
   max-width: 990px;
   width: 97%;
-  height: auto;
-  min-height: 100px;
-  padding: 8px 1.5% 8px 1.5%;
-  margin: 0 auto;
-  background: #fff;
-  border-bottom: 3px solid #005A9C;
+  height: 110px;
+  padding: 10px 0 10px 0;
+  margin: 0 auto 0 auto;
   overflow: auto;
 }
 
@@ -67,12 +64,13 @@ header#page-header {
 #fleurdelis {
   float: left;
   width: 11.8181818%;
-  text-align: center;
 }
 
 #fleurdelis img {
   max-height: 100px;
   width: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 #brand {
@@ -107,7 +105,7 @@ h1#site-name {
   width: 33%;
   text-align: right;
   color: #005A9C;
-  padding-right: 15px;
+  padding-right: 5px;
   font-size: 90%;
   line-height: 140%;
 }
@@ -124,56 +122,67 @@ h1#site-name {
 
 /* ── MAIN NAVIGATION ── */
 #main-navigation {
-  background: #005A9C;
   width: 100%;
+  background-color: #005A9C;
   height: 40px;
-  margin: 0;
   clear: both;
 }
 
-#main-navigation ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: nowrap;
+#main-navigation nav {
+  font-size: 90%;
   max-width: 990px;
   width: 97%;
   margin: 0 auto;
-  padding: 0 1.75%;
-  height: 100%;
-  align-items: stretch;
+  position: relative;
+  z-index: 1000;
 }
 
-#main-navigation ul li {
+#main-navigation nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+#main-navigation nav ul li {
   position: relative;
   list-style: none;
   float: left;
   display: block;
+  background-color: #005A9C;
+  overflow: visible;
+  text-align: center;
+  white-space: nowrap;
+  max-width: 16.75%;
 }
 
-#main-navigation ul li a {
+#main-navigation nav ul li a {
   display: block;
   color: #fff;
   text-decoration: none;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 90%;
+  font-size: 100%;
   font-weight: bold;
-  padding: 0 1em;
+  padding: 0.75em 0 0.77em 0;
   border-left: 1px solid #0065AD;
-  transition: background 0.15s;
-  line-height: 40px;
-  white-space: nowrap;
+  border-bottom: none;
   overflow: visible;
-  height: 40px;
+  transition: background 0.15s;
 }
 
-#main-navigation ul li:first-child a {
+#main-navigation nav ul li:first-child a {
   border-left: none;
 }
 
-#main-navigation ul li a:hover,
-#main-navigation ul li.current a {
+#main-navigation nav ul li a:hover,
+#main-navigation nav ul li.current a {
   background: #CE1126;
   color: #fff;
+}
+
+#main-navigation nav ul li:last-child a,
+#main-navigation nav ul li li a {
+  border-right: 1px solid #0065AD;
 }
 
 /* ── PAGE LAYOUT ── */
