@@ -56,10 +56,6 @@ header#page-header {
   overflow: auto;
 }
 
-#mobile-logo {
-  float: left;
-  display: none;
-}
 
 #fleurdelis {
   float: left;
@@ -234,9 +230,6 @@ h1#site-name {
   display: none;
 }
 
-#page-content {
-  width: 100%;
-}
 
 /* ── HERO IMAGE (homepage only) ── */
 #front-pic {
@@ -334,7 +327,7 @@ h1#site-name {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 12px 0;
+  margin: 12px 0 20px;
 }
 
 .photo-gallery img {
