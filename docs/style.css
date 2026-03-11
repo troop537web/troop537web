@@ -469,6 +469,8 @@ h1#site-name {
 /* ── CALENDAR IFRAME WRAPPER ── */
 .calendar-embed {
   margin: 16px 0;
+  width: 100%;
+  overflow: hidden;
 }
 
 /* ── RESOURCE IMAGES ── */
