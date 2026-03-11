@@ -513,13 +513,61 @@ h1#site-name {
 
 /* ── MOBILE ── */
 @media (max-width: 640px) {
-  #wrapper { flex-direction: column; padding: 12px; }
-  #sidebar { width: 100%; }
-  #logo-area { flex-direction: column; align-items: flex-start; gap: 8px; }
-  #main-navigation ul { flex-wrap: wrap; }
-  #main-navigation ul li a { padding: 8px 10px; font-size: 12px; }
-  .photo-gallery img { width: calc(50% - 4px); }
+
+  /* Header: switch to flexbox row, shrink logo and site name */
+  header#page-header {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 10px;
+    width: 100%;
+  }
+  #fleurdelis { float: none; width: auto; flex-shrink: 0; }
+  #fleurdelis img { height: 56px; }
+  #brand {
+    float: none;
+    width: auto;
+    flex: 1;
+    padding: 0 0 0 10px;
+    padding-top: 0;
+    border-left: 2px solid #005A9C;
+  }
+  h1#site-name { font-size: 20px; white-space: normal; }
+  #site-tagline { font-size: 10px; }
+  #charter-box { display: none; }
+
+  /* Navigation: remove fixed height, let items wrap */
+  #main-navigation { height: auto; }
+  #main-navigation nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #main-navigation nav ul li {
+    float: none;
+    flex: 0 0 auto;
+  }
+  #main-navigation nav ul li a { padding: 8px 9px; font-size: 11px; }
+
+  /* Layout: single column, full width */
+  #wrapper { padding: 10px; }
+  #content { width: 100%; float: none; margin: 0; }
+  #sidebar { display: none; }
+
+  /* Homepage: stack hero image, intro, and thirds */
+  #front-pic { width: 100%; float: none; }
+  #front-pic + #content { width: 100%; float: none; }
+  .content-third { width: 100%; float: none; margin: 0 0 16px 0; }
+
+  /* Calendar: reduce iframe height on small screens */
+  .calendar-embed iframe { height: 380px; }
+
+  /* Photo galleries: 2 columns instead of 3 */
+  .photo-gallery img { width: calc(50% - 4px); height: 130px; }
+
+  /* About page */
   .supporting-photos img { width: calc(50% - 4px); }
   .scoutmaster-photo, .former-sm-photo { float: none; max-width: 100%; margin: 0 0 12px; }
-  #hero-image img.prepared { display: none; }
+  .resource-img { float: none; max-width: 100%; margin: 0 0 12px 0; }
 }
